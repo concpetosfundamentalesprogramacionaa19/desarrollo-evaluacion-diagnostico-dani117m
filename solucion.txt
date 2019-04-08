@@ -1,0 +1,39 @@
+
+Algoritmo autosimportados
+	ump1<-0
+	ump2<-0
+	ump3<-0
+	ump4<-0
+	Escribir "Ingresar el numero de autos a registrar "
+	Leer l
+	Para n<-0 Hasta l Con Paso 1 Hacer
+		Escribir "Ingrese los siguientes datos"
+		Escribir "Marca"
+		leer marca
+		Escribir "Origen"
+		Leer origen 
+		Escribir "Costo"
+		Leer costo 
+		n<-n+1
+			si origen= "Argentina o argentina"
+				ump1<-costo*0.20
+			SiNo
+				si origen= "Colombia o colombia"
+					ump2<-costo*0.25
+				SiNo
+					si origen="Chile o chile"
+						ump3<-costo*0.30
+					SiNo
+						ump4<-costo+0.40
+					FinSi
+				FinSi
+			FinSi
+	Fin Para
+	costo<-costo+costo
+	umpt<-ump1+ump2+ump3+ump4
+	sumat<-costo+umpt 
+	Escribir "El Total de autos importados es igual a ", l
+	escribir "Los impuestos generados fueron de ", umpt
+	Escribir "La suma de todos los autos es",sumat
+	
+FinAlgoritmo
